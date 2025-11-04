@@ -42,6 +42,7 @@
     - For each conversion specification in the format string, scanf tries to locate an item of the appropriate type in the input data, skipping blank space if necessary.
     - Returns an **integer** representing the number of successful reads and 0 or -1 for failure.
     - Ignores **white-space characters** (the space, horizontal and vertical tab, form-feed, and new-line characters).
+
 ![alt text](image-2.png)
 
 - Rules `scanf` Follows:
