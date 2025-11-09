@@ -71,7 +71,7 @@ int main(void)
 
 - Types: A description of what kind of data a variable holds.
     - Numeric Types: Determine the lrages and smallest numbers that the variable can store, as well as whether or not digits are allowed after the decimal point.
-        - `int`: Short for *integer*, can store a signed or unsigned (positive or negative)whole integer like 0, 1, 392, or -2553.
+        - `int`: Short for *integer*, can store a signed or unsigned (positive or negative) whole integer like 0, 1, 392, or -2553.
         - `float`: Short for *floating-point*, can store much larger numbers than an `int` variable, as well as number **after** the decimal point.
             - Arithmetic on `float` can be slower than that on type `int`.
             - The value of a `float` is often just an approximation of the number that was stored in it. 
