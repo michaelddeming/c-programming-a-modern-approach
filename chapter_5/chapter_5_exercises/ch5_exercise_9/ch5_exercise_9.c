@@ -1,0 +1,1 @@
+// Yes, these code blocks are equivalent. They just check the conditions in the opposite order, which requires switching `>=` to `<` (or vice versa). The logic and final results remain the same.
