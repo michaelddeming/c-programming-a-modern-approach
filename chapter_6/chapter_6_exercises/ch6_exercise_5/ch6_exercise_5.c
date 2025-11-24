@@ -1,0 +1,1 @@
+/* C is the odd statement out, the do-while loop will perform the statements in the loop body at least 1 time and then evalute the conditional expression to decided whether or not to continue the loop. A singular for or while statement will not perform the actions in the loop body unless the conditional expression is met first. */ 
