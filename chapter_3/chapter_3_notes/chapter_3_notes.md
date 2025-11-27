@@ -10,7 +10,7 @@
         1. `d`: Displays an integer in decimal (base 10) form. `p` indicates the minimum nymber of digits to be displayed (extra zeros are added to the beginning of the number if neccessary).
         2. `e`: Displays a floating-point number in exponential format (scientific notation). `p` indicated how many digits should appear after the decimal point (the default is 6). If `p` is 0, the decimal point is not displayed.
         3. `f`: Displays a floating-point number if "fixed decimal" format, without an exponent. `p` has the same meaning as for `e`.
-        4. `g`: Displays a floating-point number is either exponential format or fixed decimal format, depending on the number's size. `p` indicates the maximum nymber of significant digits (not after the decimal point) to be displayed. Unlike the `f` conversion, the `g` conversion won't show trailing zeros. 
+        4. `g`: Displays a floating-point number is either exponential format or fixed decimal format, depending on the number's size. `p` indicates the maximum number of significant digits (not after the decimal point) to be displayed. Unlike the `f` conversion, the `g` conversion won't show trailing zeros. 
     - Optional Formatting: `%m.pX` or `%-m.pX`
         - `m`-> Minimum Field Width (the minimum number of characters to be "reserved" for that value insertion)
             - Positive `m` indicates "right justified" characters.
