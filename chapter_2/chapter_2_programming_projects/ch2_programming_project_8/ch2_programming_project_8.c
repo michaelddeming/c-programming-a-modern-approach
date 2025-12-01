@@ -13,9 +13,9 @@ int main(void){
 
     float monthly_rate = (rate / 100.0f) / 12;
 
-    float month_one_balance = (amount - payment) + (amount * monthly_rate);
-    float month_two_balance = (month_one_balance - payment) + (month_one_balance * monthly_rate);
-    float month_three_balance = (month_two_balance - payment) + (month_two_balance * monthly_rate);
+    float month_one_balance = (amount + (amount * monthly_rate)) - payment;
+    float month_two_balance = (month_one_balance + (month_one_balance * monthly_rate)) - payment;
+    float month_three_balance = (month_two_balance + (month_two_balance * monthly_rate)) - payment;
 
     printf("Balance remaining after first payment: $%0.2f\n", month_one_balance);
     printf("Balance remaining after second payment: $%0.2f\n", month_two_balance);
