@@ -85,3 +85,46 @@
     - You can also specify the length by: ![alt text](image-15.png)
     - `lvalues`, so that values of its elements can be changes.
     - Can make it **read-only** by adding `const`: ![alt text](image-16.png)
+
+## 9.4 The `return` Statement
+
+- `return`: A statement that stops a function and returns back to where the function was called, with any value following the return keyword.
+    - If the type of the expression in a `return` statement doesn't match the function's return type, the expression will be implicitly converted to the return type.
+    - `return` statements may appear in functions whose return type is `void`, provided that no expression is given.
+    - When used in `main` the `return` statement exits the program.
+     
+## 9.5 Program Termination
+
+- Omitting `return` type: 
+    - Older C programs often omit the main function return type.
+    - C99, omitting the return type of a function is illegal. 
+
+- `exit` Function: A function within the `<stdlib.h>`, with arguements passed to `exit`that have the same meaning as `main`'s return value. Both indicate the programs status at termination.
+    - `exit(0)`: Normal termination
+    - `exit(>0)`: Abnormal termination
+    - `EXIT_SUCCESS` and `EXIT_FAILURE` are macros defined within the `<stdlib.h>` that are implementation-defined, with typical values of 0 and 1, respectively.
+    - The difference between `return` and `exit` is that `exit` causes program termination regardless of which function calls it. The `return` statement causes program termination only when it appears in the `main` function.
+
+## 9.6 Recursion
+
+- Recursive function: A function is recursive if it calls itself.
+
+![alt text](image-21.png)
+![alt text](image-17.png)
+![alt text](image-18.png)
+![alt text](image-19.png)
+![alt text](image-20.png)
+
+- Termination Condition: A test that is evaluated as soon as a recursive function is called to either terminate the recursive calls or continue to recurse.
+    - All recursive functions need some kind of termination condition in order to prevent infinite recursion. 
+
+- Quicksort Algorithm: A sorting algorithm that is an example of the **divide-and-conquer** technique.
+    - Divide-and-conquer: Large problems are divided into smaller pieces that are tackled by the same algorithm.
+![alt text](image-22.png) note: array example is indexed starting from 1 to n.
+![alt text](image-23.png)
+![alt text](image-24.png)
+
+- Improving Quicksort: 
+    1. Improving the partitioning algorithm. 
+    2. Using a different method to sort small arrays (<=25 elements).
+    3. Making Quicksort nonrecursive.
